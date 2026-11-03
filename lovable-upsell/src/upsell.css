@@ -162,3 +162,27 @@ html { scroll-behavior: smooth; }
   .investment-shell::before { background: var(--primary); }
   .investment-shell::after { display: none; }
 }
+/* Centralização explícita do conteúdo da primeira seção em todas as telas. */
+.up .up-hero > .up-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.up .up-hero h1,
+.up .up-hero .up-sub,
+.up .up-hero .up-mini,
+.up .up-hero .up-facts {
+  width: 100%;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-wrap: pretty;
+}
+.up .up-hero .up-sub { max-width: 640px; margin-top: 14px; }
+.up .up-hero .up-mini { max-width: 620px; margin-top: 10px; }
+.up .up-hero .up-facts { margin-top: 18px; }
+.up .up-hero .up-facts.price { margin-top: 4px; }
+.up .up-hero .up-video { align-self: center; }
+.up .up-hero .up-actions { width: 100%; justify-content: center; }
